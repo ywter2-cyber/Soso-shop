@@ -259,7 +259,7 @@ body.kb-en .key .r{display:none}
 body.kb-en .key .l{position:static;font-size:17px;font-weight:600;color:var(--ink)}
 body.kb-en .key::after{display:none}
 /* Netlify 自動加入的標誌固定在右下角：在 netlify.app 上把鍵盤推高，讓標誌落在下面的空位 */
-body.host-badge .kb{padding-bottom:calc(10px + 52px)}
+body.host-badge .kb{padding-bottom:calc(10px + 68px + env(safe-area-inset-bottom,0px))}
 @media (min-width:520px){.key{height:56px}.key .r{font-size:23px}.key .l{font-size:10.5px}body.kb-en .key .l{font-size:19px}}
 
 /* ---------- result ---------- */
